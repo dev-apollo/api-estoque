@@ -1,0 +1,30 @@
+POST http://localhost:3333/produtos
+Content-type: application/json
+
+{
+    "nome": "Banana",
+    "preco": 10.99,
+    "quantidade": 10
+}
+
+###
+
+GET http://localhost:3333/produtos
+Content-type: application/json
+
+###
+
+GET http://localhost:3333/produtos/id
+
+###
+
+PUT http://localhost:3333/produtos/id
+Content-type: application/json
+
+{
+
+}
+
+###
+
+DELETE http://localhost:3333/produtos/id
