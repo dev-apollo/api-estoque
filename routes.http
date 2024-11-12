@@ -2,9 +2,20 @@ POST http://localhost:3333/produtos
 Content-type: application/json
 
 {
-    "nome": "Banana",
+    "nome": "Cacho de Banana",
     "preco": 10.99,
     "quantidade": 10
+}
+
+###
+
+POST http://localhost:3333/produtos
+Content-type: application/json
+
+{
+    "nome": "Caixa de Ovos",
+    "preco": 19.99,
+    "quantidade": 20
 }
 
 ###
@@ -14,17 +25,20 @@ Content-type: application/json
 
 ###
 
-GET http://localhost:3333/produtos/id
+GET http://localhost:3333/produtos/?id=
 
 ###
 
-PUT http://localhost:3333/produtos/id
+PUT http://localhost:3333/produtos/?id=
 Content-type: application/json
 
 {
-
+    "nome": "Cacho de Banana",
+    "preco": 10.99,
+    "quantidade": -1
 }
 
 ###
 
-DELETE http://localhost:3333/produtos/id
+DELETE http://localhost:3333/produtos/?id=
+
